@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(kill %1)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(backend/.venv/bin/python -c ' *)",
+      "Bash(.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8088 --log-level info)"
+    ]
+  }
+}
