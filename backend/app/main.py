@@ -24,7 +24,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Auto-load .env from the repo root (one level above backend/) so plain
 # `uvicorn app.main:app` picks up GEMINI_API_KEY without manual exports.
-load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
 from .persona_rules import rules_for
 from .planner import plan_trip, replan_trip
